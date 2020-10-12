@@ -1,0 +1,158 @@
+:root {
+	--black-grey: #111111;
+	--white-grey: #e2e2e2;
+	--white-black: #888888;
+	--mint: #3CFFA3;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+}
+
+a {
+	font-weight: 700;
+}
+
+a:hover {
+	color: var(--mint) !important;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+	margin: auto;
+	margin-bottom: 124px;
+	padding: 40px 0 40px 0;
+}
+
+.data-info {
+	display: block;
+	max-width: 1440px;
+	margin: auto;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.section-1 {
+	background-color: var(--black-grey);
+	color: var(--white-grey);
+	padding: 0 40px 148px 40px;
+}
+
+.section-2 {
+	background-color: white;
+	color: var(--black-grey);
+	padding: 80px 40px 80px 40px;
+}
+
+.section-3 {
+	background-color: var(--black-grey);
+}
+
+.section-desc {
+	/* background-color: var(--black-grey); */
+	color: var(--black-grey);
+	padding: 0 40px 40px 40px;
+}
+
+.logo {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.white-link {
+	color: var(--white-grey);
+}
+
+.black-link {
+	color: var(--black-grey);
+}
+
+.info-block {
+	max-width: 1190px;
+	margin: auto;
+	line-height: 30px;
+}
+
+.project-preview {
+	display: block;
+	max-width: 1440px;
+	margin: auto;
+	padding: 0 40px 0 40px;
+}
+
+.text-block {
+	max-width: 475px;
+	line-height: 30px;
+	margin-bottom: 120px;
+}
+
+.skills-block {
+	max-width: 1000px;
+}
+
+.text-16-light {
+	font-weight: 300;
+}
+
+/* ------------------------------------ projects block ------------------------------------ */
+#portfolio {
+	max-width: 1440px;
+	margin: auto;
+}
+
+.portfolio-box-caption {
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	color: black;
+	background: var(--mint);
+	text-align: center;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 0.8;
+	transition: opacity 0.7s ease;
+}
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.7s, opacity 0.7s ease;
+}
+
+/* ------------------------------------ end of projects block ------------------------------------ */
+@media only screen and (max-width: 600px) {
+	.data-info {
+		font-size: 16px;
+	}
+
+	.logo {
+		font-size: 18px;
+	}
+
+	.project-preview {
+		display: block;
+		max-width: 1440px;
+		margin: auto;
+		padding: 0;
+	}
+}
