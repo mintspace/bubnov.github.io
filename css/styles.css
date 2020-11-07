@@ -71,6 +71,18 @@ a:hover {
 	text-decoration: none;
 }
 
+.ava {
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	background-image: url("../assets/img/ava/ava.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 430px;
+	width: 310px;
+	z-index: 10;
+}
+
 .white-link {
 	color: var(--white-grey);
 }
@@ -80,6 +92,7 @@ a:hover {
 }
 
 .info-block {
+	position: relative;
 	max-width: 1190px;
 	margin: auto;
 	line-height: 30px;
@@ -93,13 +106,17 @@ a:hover {
 }
 
 .text-block {
+	position: relative;
 	max-width: 475px;
 	line-height: 30px;
 	margin-bottom: 120px;
+	z-index: 100;
 }
 
 .skills-block {
+	position: relative;
 	max-width: 1000px;
+	z-index: 100;
 }
 
 .text-16-light {
@@ -140,6 +157,13 @@ a:hover {
 }
 
 /* ------------------------------------ end of projects block ------------------------------------ */
+
+@media only screen and (max-width: 1000px) {
+	.ava {
+		opacity: 0;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.data-info {
 		font-size: 16px;
