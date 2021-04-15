@@ -10,10 +10,22 @@ if ($(".header").hasClass("header-black")) {
 
 const $headerBlock = $(`
 			<a href="index.html" class="${link} logo">Dmitry<br>Bubnov</a>
-			<div>
-				<a href="mailto:dmitrybubnov.ca@gmail.com" class="${link} data-info">dmitrybubnov.ca@gmail.com</a>
-				<a href="https://www.linkedin.com/in/dbubnov/" class="${link} data-info">linkedIn</a>
-				<a href="https://github.com/mintspace?tab=repositories" class="${link} data-info">GitHub</a>
+			<div class="icon-box">
+				<div>
+					<a href="https://www.linkedin.com/in/dbubnov/" target="_blank" class="${link} data-info">
+						<i class="fa fa-linkedin fa-2x" aria-hidden="false"></i>
+					</a>
+				</div>
+				<div>
+					<a href="mailto:dmitrybubnov.ca@gmail.com" class="${link} data-info">
+						<i class="fa fa-envelope fa-2x" aria-hidden="false"></i>
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/mintspace?tab=repositories" target="_blank" class="${link} data-info">
+						<i class="fa fa-github fa-2x" aria-hidden="false"></i>
+					</a>
+				</div>
 			</div>
 		`);
 
